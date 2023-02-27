@@ -1,38 +1,469 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* NAVBAR */
+.Navbar {
+  width: 100%;
+  height: 14vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.Navbar img {
+  width: 7vw;
+  border-radius: 100px;
+  margin-left: 2rem;
+}
+.links li {
+  font-family: "Shadows Into Light";
+  display: inline-flex;
+  padding: 1rem;
+  margin-right: 2rem;
+  font-size: 2.5vh;
+  color: black;
+  font-weight: 700;
+}
+.links li:hover {
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+/* Carousel */
+.outerLayer {
+  display: flex;
+  height: 50vw;
+  width: 100%;
+}
+.outerLayer img {
+  height: 50vw;
+  width: 100vw;
+}
+.buttonLeft {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  font-size: 3rem;
+  color: white;
+}
+.buttonRight {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  font-size: 3rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Mapper */
+
+.mapper-container {
+  align-items: center;
+}
+.mapper {
+  padding: 2rem;
+  font-family: "anton";
+}
+.mapper img {
+  width: 15vw;
+  height: 25vh;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.mapper img:hover {
+  transform: scale(1.3);
+  transition-duration: 1s;
+}
+.mapper h1 {
+  font-size: 2rem;
+  margin-bottom: 0%;
+  font-weight: lighter;
+}
+.mapper p {
+  margin-top: 0%;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* kfc */
+.kfc {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.kimage {
+  margin-right: 0;
+  padding: 0;
+}
+.kimage img { 
+  margin-top: 3rem;
+  height: 90%;
+  width: 90%;
+}
+.kfcDescription {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+.kfcDescription h1 {
+  font-size: 5rem;
+  font-family: "anton";
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+.kfcDescription p {
+  font-family: "Shadows Into Light";
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: bold;
+}
+.footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer img {
+  width: 7vw;
+  border-radius: 100px;
+  margin-left: 2rem;
+}
+/* Menu */
+.menu-container {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.menu-container h2 {
+  font-family: "Shadows Into Light";
+  font-size: 3rem;
+}
+.appetizer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap; 
+}
+.mainmenu {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.drink {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.beer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* About */
+.about {
+  text-align: center;
+  padding: 2rem;
+  font-family: "Shadows Into Light";
+}
+.about h1 {
+  font-size: 3rem;
+}
+.about img {
+  width: 50vw;
+}
+.about h2 {
+  font-size: 2rem;
+}
+.about p {
+  font-size: 1.5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* footer */
+.footer {
+  display:flex;
+}
+.foot {
+  margin-right: 3rem;
+  font-family: "Shadows Into Light";
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration-line: none;
+  color: black;
+}
+.footer-contact {
+  text-align: center;
+  font-family: "Shadows Into Light";
+  font-weight: bold;
+}
+.footer-contact a {
+  color:black;
+  text-decoration: none;
+}
+.social {
+  margin-right: 3rem;
+  font-size: 2.5rem;
+  color:black;
+}
+
+/* Order Page */
+
+.order-page-container {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  
+}
+
+
+/* Order Page Menu */
+.order {
+  width: 70%;
+}
+.order h1 {
+  font-family: "Shadows Into Light";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.order-items {
+  display: flex;
+  margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+.order-menu-container {
+  width: 10rem;
+}
+.order-menu-container button {
+  width: 3.5rem;
+  height: 2rem;
+  border-radius: 15px;
+  background-color: rgb(240, 241, 237);
+  color: black;
+  border: 1px solid black;
+  transition-duration: 0.5s;
+}
+.order-menu-container button:hover {
+  background-color: black;
+  color: white;
+}
+.order-menu img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 15px;
+}
+.order-menu h2 {
+  font-size: 1rem;
+}
+
+.ordercart {
+  width: 25%;
+}
+.ordercart h1 {
+  font-family: "Shadows Into Light";
+}
+.ordercart-items {
+  display: flex;
+  padding: .5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.ordercart-items img{
+  width: 4rem;
+}
+.itemName-container {
+  width: 10rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.orderButton-container {
+  width: 5rem;
+  margin-left: 0.5rem;
+}
+.ordercart-items input {
+  text-align: center;
+}
+.price-container {
+  width: 4rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.ordercart-items p {
+  font-size: small;
+}
+.ordercart-items button {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.ordercart-items input {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+  height: 80vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.contact-form label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.contact-form h1 {
+  font-family: "Shadows Into Light";
+}
+.contact-form p {
+  color: red;
+  font-size: 0.8rem;
+}
+.contact-form input {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+.contact-form select {
+  width: 20rem;
+  font-size: 2rem;
+}
+.contact-form textarea {
+  width: 20rem;
+  height: 15rem;
+  resize: none;
+}
+.contact-form button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+input.input-error,
+select.input-error {
+  border-color: red;
+}
+textarea.input-error,
+select.input-error {
+  border-color: red;
+}
+
+/* Total-container */
+.total-container {
+  margin-right: 2%;
+  align-items: center;
+}
+.total-container h2 {
+  font-size: 1rem;
+  width: 10rem;
+}
+.total-container p {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 5rem;
+}
+.total-container button {
+  margin-top: 2rem;
+  width: 7rem;
+  height: 1.4rem;
+  border-radius: 15px;
+}
+.total-container button:hover {
+  background-color: black;
+  color: white;
+}
+.total-container h1 {
+  font-size: 1.5rem;
+  margin-top: 20rem;
+}
+.subtotal {
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  height: 1.5rem;
+  text-align: right;
+}
+.tax {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 1.5rem;
+  text-align: right;
+}
+.total {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 1.5rem;
+  text-align: right;
+}
+
+/* Reservation */
+.reservation-container {
+  margin-top: 5rem;
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.reservation-container h1 {
+  font-family: "Shadows Into Light";
+}
+.reservation {
+  width: 70vh;
+  height: 70vh;
+  outline: solid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.reservation p {
+  font-size: large;
+}
+.reservation-container input {
+  height: 1.5rem;
+  width: 10rem;
+}
+.reservation-container label {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+.reservation-container select {
+  width: 10rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.reservation-container button {
+  width: 5rem;
+}
+
+.reservation-image {
+  height: 70vh;
+  width: 70vh;
+}
+.reservation-image img {
+  height: 70vh;
+  width: 70vh;
+  border-radius: 20px;
 }
