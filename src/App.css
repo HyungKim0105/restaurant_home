@@ -353,6 +353,7 @@
   height: 2rem;
   border-radius: 15px;
   margin-top: 2rem;
+  border: none;
 }
 input.input-error,
 select.input-error {
@@ -436,26 +437,27 @@ select.input-error {
 .reservation p {
   font-size: large;
 }
-.reservation-container input {
+.reservation input {
   height: 1.5rem;
   width: 10rem;
 }
-.reservation-container label {
+.reservation label {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
   margin-bottom: 1.1rem;
 }
-.reservation-container select {
+.reservation select {
   width: 10rem;
-  display: flex;
   margin-bottom: 1.5rem;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-.reservation-container button {
+.reservation button {
   width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 3rem;
 }
 
 .reservation-image {

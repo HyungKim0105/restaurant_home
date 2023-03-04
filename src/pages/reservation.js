@@ -52,7 +52,9 @@ const Reservation = () => {
           <option value="8:00PM">8:00PM</option>
           <option valu="9:00PM">9:00PM</option>
         </select>
+        <div>
         <button>Submit</button>
+        </div>
       </div>
       <div className="reservation-image">
         <img src={reservation} alt="reservation"/>
