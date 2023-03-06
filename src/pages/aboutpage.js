@@ -1,4 +1,4 @@
-import kitchen from "../assets/Kitchen.jpeg"
+import kitchen from "../assets/Kitchen.png"
 
 const Aboutpage = () => {
   return (

@@ -1,4 +1,4 @@
-import reservation from "../assets/reservation.jpeg"
+import reservation from "../assets/reservation.png"
 import { useForm } from 'react-hook-form'
 import { useEffect } from "react"
 
